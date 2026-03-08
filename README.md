@@ -2,6 +2,16 @@
 
 Python implementation of the [IsoMatch MATLAB implementation](https://github.com/ohadf/isomatch).
 
+Side-by-side comparison of IsoMatch and IsoMatch with Random Swaps on randomly generated 20x20 grid of colors
+
+![IsoMatch Output Comparison](isomatch_comparison.png)
+
+IsoMatch (no swaps) total execution time: 16.2168 seconds.
+  Objective: 0.4703 -> 0.2362
+
+IsoMatch (50000 random swaps) total execution time: 404.2337 seconds.
+  Objective: 0.4703 -> 0.2033
+
 ---
 
 ## File Map
