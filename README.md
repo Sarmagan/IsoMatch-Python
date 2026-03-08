@@ -1,6 +1,6 @@
-# IsoMatch — Python Port
+# IsoMatch Python 
 
-Python translation of the [IsoMatch MATLAB implementation](https://github.com/ofirfrish/IsoMatch).
+Python implementation of the [IsoMatch MATLAB implementation](https://github.com/ohadf/isomatch).
 
 ---
 
