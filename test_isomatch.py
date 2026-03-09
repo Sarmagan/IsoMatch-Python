@@ -22,7 +22,7 @@ def create_color_grid(colors: np.ndarray, grid_size: tuple[int, int]) -> np.ndar
 
 
 def test() -> None:
-    grid_size = (20, 20)
+    grid_size = (32, 32)
     n = grid_size[0] * grid_size[1]
 
     # Generate random RGB colours (matches test.m: rand_colors = rand(prod(grid_size), 3))
@@ -72,6 +72,12 @@ def test() -> None:
         axes[2].axis('off')
 
         plt.tight_layout()
+        
+        # Save the figure to the current working directory
+        image_filename = 'isomatch_comparison.png'
+        plt.savefig(image_filename, dpi=300, bbox_inches='tight')
+        print(f"Plot successfully saved as '{image_filename}'")
+        
         plt.show()
 
     except ImportError:
